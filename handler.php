@@ -6,9 +6,9 @@ use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
 use League\Pipeline\Pipeline;
 use Szogyenyid\PhpApiPipeline\Filters\Authenticate;
 use Szogyenyid\PhpApiPipeline\Filters\EmitResponse;
+use Szogyenyid\PhpApiPipeline\Filters\Route;
 use Szogyenyid\PhpApiPipeline\Payload;
 use Szogyenyid\PhpApiPipeline\ResponseException;
-use Szogyenyid\PhpApiPipeline\Route;
 
 require __DIR__ . '/vendor/autoload.php';
 

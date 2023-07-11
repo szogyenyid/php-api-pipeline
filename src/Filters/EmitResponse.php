@@ -10,7 +10,7 @@ class EmitResponse implements FilterInterface
 {
     public function __invoke(Payload $payload): Payload
     {
-        (new SapiEmitter())->emit($payload->response);
+        (new SapiEmitter())->emit($payload->getResponse());
         return $payload;
     }
 }

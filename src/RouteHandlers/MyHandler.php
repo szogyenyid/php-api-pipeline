@@ -8,7 +8,7 @@ use Szogyenyid\PhpApiPipeline\AbstractHandler;
 
 class MyHandler extends AbstractHandler
 {
-    public function hello(?string $name): ResponseInterface
+    public function hello(?string $name = null): ResponseInterface
     {
         return $this->response->withBody(Utils::streamFor(json_encode([
             'message' => 'Hello ' . ($name ?? 'World') . '!'
