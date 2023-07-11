@@ -1,0 +1,15 @@
+{
+    "name": "szogyenyid/php-api-pipeline",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Szogyenyid\\PhpApiPipeline\\": "src/"
+        }
+    },
+    "require": {
+        "league/pipeline": "^1.0",
+        "guzzlehttp/psr7": "^2.5",
+        "laminas/laminas-httphandlerrunner": "^2.6",
+        "nikic/fast-route": "^1.3"
+    }
+}
