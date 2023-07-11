@@ -1,6 +1,6 @@
 <?php
 
-namespace Szogyenyid\PhpApiPipeline;
+namespace Szogyenyid\PhpApiPipeline\Handlers;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

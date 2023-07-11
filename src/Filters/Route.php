@@ -7,10 +7,9 @@ use FastRoute\RouteCollector;
 use GuzzleHttp\Psr7\Utils;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Szogyenyid\PhpApiPipeline\FilterInterface;
 use Szogyenyid\PhpApiPipeline\Payload;
 use Szogyenyid\PhpApiPipeline\ResponseException;
-use Szogyenyid\PhpApiPipeline\RouteHandlers\MyHandler;
+use Szogyenyid\PhpApiPipeline\Handlers\MyHandler;
 
 use function FastRoute\simpleDispatcher;
 

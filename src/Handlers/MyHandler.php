@@ -1,10 +1,9 @@
 <?php
 
-namespace Szogyenyid\PhpApiPipeline\RouteHandlers;
+namespace Szogyenyid\PhpApiPipeline\Handlers;
 
 use GuzzleHttp\Psr7\Utils;
 use Psr\Http\Message\ResponseInterface;
-use Szogyenyid\PhpApiPipeline\AbstractHandler;
 
 class MyHandler extends AbstractHandler
 {

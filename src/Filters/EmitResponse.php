@@ -3,7 +3,6 @@
 namespace Szogyenyid\PhpApiPipeline\Filters;
 
 use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
-use Szogyenyid\PhpApiPipeline\FilterInterface;
 use Szogyenyid\PhpApiPipeline\Payload;
 
 class EmitResponse implements FilterInterface

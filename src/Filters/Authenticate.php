@@ -3,7 +3,6 @@
 namespace Szogyenyid\PhpApiPipeline\Filters;
 
 use GuzzleHttp\Psr7\Utils;
-use Szogyenyid\PhpApiPipeline\FilterInterface;
 use Szogyenyid\PhpApiPipeline\Payload;
 use Szogyenyid\PhpApiPipeline\ResponseException;
 
