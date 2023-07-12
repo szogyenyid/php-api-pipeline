@@ -36,20 +36,20 @@ class Route implements FilterInterface
                         ->withStatus(404)
                         ->withBody(Utils::streamFor('Not Found'))
                 );
-                break;
             case Dispatcher::METHOD_NOT_ALLOWED:
                 throw new ResponseException(
                     $payload->getResponse()
                         ->withStatus(405)
                         ->withBody(Utils::streamFor('Method Not Allowed'))
                 );
-                break;
             case Dispatcher::FOUND:
                 $handler = $routeInfo[1];
                 $vars = $routeInfo[2];
                 return $payload->withResponse(
                     $handler(...$vars)
                 );
+            default:
+                return $payload;
         }
     }
 }

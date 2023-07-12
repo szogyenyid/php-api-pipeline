@@ -11,6 +11,13 @@ class Authenticate implements FilterInterface
     public function __invoke(Payload $payload): Payload
     {
         $request = json_decode($payload->getRequest()->getBody()->getContents(), true);
+        if (!is_array($request)) {
+            throw new ResponseException(
+                $payload->getResponse()
+                    ->withStatus(400)
+                    ->withBody(Utils::streamFor('Bad Request'))
+            );
+        }
         if (!isset($request['key']) || $request['key'] !== 'secret') {
             throw new ResponseException(
                 $payload->getResponse()

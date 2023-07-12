@@ -87,3 +87,7 @@ Contributions to this sample project are welcome! If you have any ideas, improve
 This project is licensed under the MIT License.
 
 Feel free to explore the provided sample project and experiment with the pipeline pattern as an alternative to MVC frameworks for API development. Remember to adapt the project to your specific needs and extend it as necessary. Happy coding!
+
+## TODO:
+
+- Elaborate in readme that using pipelines will allow you to match libraries and dependencies as you wish.
