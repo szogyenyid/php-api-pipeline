@@ -12,12 +12,9 @@ use Szogyenyid\PhpApiPipeline\ResponseException;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$request = ServerRequest::fromGlobals();
-$response = (new HttpFactory())->createResponse();
-
 $payload = new Payload(
-    $request,
-    $response
+    request: ServerRequest::fromGlobals(),
+    response: (new HttpFactory())->createResponse()
 );
 
 try {
